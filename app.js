@@ -9,8 +9,6 @@ console.log("clicked");
 function callfunction(){
 var birthday = birthdate.value;
 console.log(birthday)
-
-// const date  = "2022-5-3"
 const arr = birthday.split("-")
 console.log(arr)
 const date = {
@@ -18,13 +16,7 @@ const date = {
   month: arr[1],
   day : arr[2]
 }
-console.log(date)
-// var date =  { 
-//     day:   '33',
-//     month: '21',
-//     year:  '1233' 
-// }
-
+// console.log(date)
 
 function checkalldayformats(date){
 let datestr ={day:'',month:'',year:''}
@@ -57,7 +49,7 @@ return [dd_mm_yyyy , mm_dd_yyyy , yyyy_mm_dd ,date1,date2,date3];
 }
 
 var arrayofdate = dayinto(newdate)
-console.log(arrayofdate)
+// console.log(arrayofdate)
 
 function isPalindrome(arrayofdate){
 let array = []
@@ -71,7 +63,7 @@ var truee =   (reversedstring==arrayofdate[i])
 }
 isPalindrome(arrayofdate)
 var finalanswer = isPalindrome(arrayofdate);
-console.log(finalanswer)
+// console.log(finalanswer)
 
 
 function checkpalindrome(finalanswer){
@@ -87,8 +79,8 @@ output.innerHTML = `Your birthday is a palindrome = ${checkpalindrome(finalanswe
 
 const date1 = new Date(birthday)
 const date2  = new Date("02/03/2030")
-console.log(date1)
-console.log(date2)
+// console.log(date1)
+// console.log(date2)
 let differcebetweendates =   date2.getTime()  - date1.getTime()
 let differceinday = differcebetweendates/ (1000 * 3600 * 24)
 console.log(Math.floor(differceinday))
